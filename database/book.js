@@ -1,4 +1,4 @@
-const moongose = require("mongoose");
+const mongose = require("mongoose");
 
 
 //Creating a book schema
