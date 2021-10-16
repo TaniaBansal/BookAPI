@@ -1,52 +1,50 @@
 let books = [
     {
-      ISBN: "12345Book",
+      ISBN: "12345ONE",
       title: "Getting started with MERN",
-      pubdate: "2021-07-07",
-      language: "en",
-      numPage: 250,
       authors: [1, 2],
-      publications : 1,
-      category: ["tech", "programming", "education", "thriller"],
-    },
-
-    {
-        ISBN: "12345Two",
-        title: "Getting started with Python",
-        pubdate: "2021-07-07",
-        language: "en",
-        numPage: 250,
-        authors: [1],
-        publications :1,
-        category: ["tech", "programming", "education"],
-      },
-];
-
-let authors = [
-    {
-        id: 1,
-        name: "Tania",
-        books: ["12345Book", "12345Two"],
+      language: "en",
+      pubDate: "2021-07-07",
+      numOfPage: 225,
+      category: ["fiction", "programming", "tech", "web dev"],
+      publication: 1,
     },
     {
-        id:2,
-        name: "Elon Musk",
-        books: ["12345Book"],
+      ISBN: "12345Two",
+      title: "Getting started with React",
+      authors: [1, 2],
+      language: "en",
+      pubDate: "2021-07-07",
+      numOfPage: 250,
+      category: ["fiction", "tech", "web dev"],
+      publication: 1,
     },
-];
-
-let publications = [
+  ];
+  
+  const authors = [
     {
-       id: 1,
-       name: "writex",
-       books:["12345Book" , "12345Two"],
+      id: 1,
+      name: "Tania",
+      books: ["12345ONE", "12345Two"],
     },
-
     {
-        id : 2,
-        name : "Vickie publications",
-        books : [],
+      id: 2,
+      name: "Ashima",
+      books: ["12345ONE"],
     },
-];
-
-module.exports = {books, authors, publications };
+  ];
+  
+  const publications = [
+    {
+      id: 1,
+      name: "Chakra",
+      books: ["12345ONE"],
+    },
+    {
+      id: 2,
+      name: "Vickie Publications",
+      books: [],
+    },
+  ];
+  
+  module.exports = { books, authors, publications };
